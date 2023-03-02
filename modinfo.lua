@@ -43,6 +43,23 @@ local function AddTitle(title)
 		default = 0,
 	}
 end
-configuration_options={
 
+configuration_options={
+    {
+        name="seeds",--选项标识
+        label="多一个对应作物种子概率",
+        options={
+            {description="%100",data=1},
+            {description="%90",data=0.9},
+			{description="%80",data=0.8},
+            {description="%70",data=0.7},
+			{description="%60",data=0.6},
+            {description="%50",data=0.5},
+			{description="%40",data=0.4},
+            {description="%30",data=0.3},
+			{description="%20",data=0.2},
+            {description="%10",data=0.1},
+        },
+        default=0.5
+    },
 }
